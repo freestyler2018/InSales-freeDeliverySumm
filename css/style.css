@@ -1,0 +1,20 @@
+.progress-bar {
+	width: 100%;
+	background-color: #f6f6f6;
+	padding: 1px;
+	border-radius: 3px;
+     overflow: hidden;
+	}
+
+.progress-bar-fill {
+  	width: 0;
+	display: block;
+	height: 5px;
+	background-color: #00c367;;
+	border-radius: 3px;
+	transition: width 500ms ease-in-out;
+}
+
+#js-free-delivery {
+	padding: 10px 10px 5px 10px;
+}

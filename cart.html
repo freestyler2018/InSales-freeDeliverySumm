@@ -1,0 +1,17 @@
+
+// Сниппет cart
+// 3000 - сумма бесплатной доставки
+
+
+// Вывод сообщения, сколько осталось до бесплатной доставки, если меньше минимальной. Иначе выводим сообщение о бесплатной доставке.
+
+  {% if cart.items_price < 3000 %}
+    <span id="js-free-delivery">{{ cart.items_price | minus: 3000 | money | remove_first: "-" }}</span>
+    {% else %}
+      <span id="js-free-delivery">Бесплатная доставка по Санкт-Петербургу</span>
+  {% endif %}
+
+// Прогрессбар до бесплатной доставки.
+    <div class="progress-bar">
+        <span class="progress-bar-fill" id="progress-bar-fill"></span>
+    </div>
